@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "clean-hitbox",
+	"version": "${version}",
+	"name": "Clean Hitbox",
+	"description": "Enhances Minecraft's built-in debug hitboxes (F3 + B) with customization options.",
+	"authors": [
+		"ShirjeelPlays"
+	],
+	"contact": {
+		"sources": "https://github.com/ShirjeellAfzal"
+	},
+	"license": "MIT",
+	"icon": "assets/clean-hitbox/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.example.shirjeelplays.cleanhitbox.CleanHitbox"
+		],
+		"modmenu": [
+			"com.example.shirjeelplays.cleanhitbox.compat.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"clean-hitbox.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": ">=0.102.0",
+		"yet_another_config_lib_v3": ">=3.5.0"
+	}
+}
